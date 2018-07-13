@@ -5,7 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	public GameObject BowlingBall;
+	public GameObject Arrow;
 	public float ballDistance = 2.5f;
+	public float arrowDistance = 2.5f;
 
 	private bool holding = true;
 	public float ballThrowingForce = 200.0f;
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour {
 
 		if (holding) {
 			BowlingBall.transform.position = transform.position + Camera.main.transform.forward * ballDistance;
+			Arrow.transform.position = transform.position + Camera.main.transform.forward * arrowDistance;
 
 			if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began || Input.GetKeyDown ("space")) {
 				holding = false;
