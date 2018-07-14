@@ -9,7 +9,7 @@ public class Player : MonoBehaviour {
 	public float ballDistance = 2.5f;
 	public float arrowDistance = 2.5f;
 
-	private bool holding = true;
+	public bool holding = true;
 	public float ballThrowingForce = 200.0f;
 
 	// Use this for initialization
@@ -20,9 +20,11 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		Vector3 arrowPosition = new Vector3 (0f, -0.6f, 2.0f);
+
 		if (holding) {
 			BowlingBall.transform.position = transform.position + Camera.main.transform.forward * ballDistance;
-			Arrow.transform.position = transform.position + Camera.main.transform.forward * arrowDistance;
+			Arrow.transform.position = transform.position + arrowPosition * arrowDistance;
 
 			if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began || Input.GetKeyDown ("space")) {
 				holding = false;

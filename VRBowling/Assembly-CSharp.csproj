@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Arrow\Demo\Scripts\FollowMouseDemo.cs" />
      <Compile Include="Assets\Arrow\Scripts\ArrowRenderer.cs" />
+     <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HeadsetDemoManager.cs" />
@@ -159,6 +160,8 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\Pin.cs" />
+     <Compile Include="Assets\PinCollision.cs" />
      <Compile Include="Assets\Player.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrAdditiveOverlay.shader" />
