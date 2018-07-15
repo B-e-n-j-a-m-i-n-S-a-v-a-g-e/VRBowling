@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameController : MonoBehaviour {
@@ -39,6 +40,10 @@ public class GameController : MonoBehaviour {
 				}
 
 				infoText.text = "Your score: " + score;
+			}
+
+			if (gameTimer <= -3.0f) {
+				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			}
 		}
 	}

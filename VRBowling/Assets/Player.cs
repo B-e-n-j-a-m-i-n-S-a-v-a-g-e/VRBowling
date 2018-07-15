@@ -12,19 +12,18 @@ public class Player : MonoBehaviour {
 	public bool holding = true;
 	public float ballThrowingForce = 200.0f;
 
-	// Use this for initialization
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		Vector3 arrowPosition = new Vector3 (0f, -0.6f, 2.0f);
+	void Update () {
 
 		if (holding) {
 			BowlingBall.transform.position = transform.position + Camera.main.transform.forward * ballDistance;
-			Arrow.transform.position = transform.position + arrowPosition * arrowDistance;
+			Arrow.transform.position = transform.position + 
+				new Vector3(0.0f, BowlingBall.transform.position.y - 4.3f, BowlingBall.transform.position.z);
+
+			Arrow.transform.eulerAngles = new Vector3 (0.0f, transform.eulerAngles.y, 0.0f);
 
 			if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began || Input.GetKeyDown ("space")) {
 				holding = false;
