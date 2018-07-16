@@ -656,6 +656,7 @@ GameObject:
   - component: {fileID: 1145367328}
   - component: {fileID: 1145367327}
   - component: {fileID: 1145367326}
+  - component: {fileID: 1145367329}
   m_Layer: 0
   m_Name: Ramp
   m_TagString: Untagged
@@ -729,6 +730,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145367324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1145367329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1145367324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb5d229563c4a7449439bf9188ba255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1178313726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,7 +1430,7 @@ Prefab:
     - target: {fileID: 2300000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8d8fc296eb160f54eabe10aabfecbcb8, type: 2}
+      objectReference: {fileID: 2100000, guid: 39a0e27f618c7b24782ebfdabe615930, type: 2}
     - target: {fileID: 400000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 266.4

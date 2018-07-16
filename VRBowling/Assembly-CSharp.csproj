@@ -53,7 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\Arrow\Demo\Scripts\FollowMouseDemo.cs" />
      <Compile Include="Assets\Arrow\Scripts\ArrowRenderer.cs" />
+     <Compile Include="Assets\BallRotation.cs" />
      <Compile Include="Assets\GameController.cs" />
+     <Compile Include="Assets\GetSize.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoSceneManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\HelloVR\HeadsetDemoManager.cs" />
