@@ -166,6 +166,7 @@
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
      <Compile Include="Assets\Scripts\BallRotation.cs" />
+     <Compile Include="Assets\Scripts\BallSelectionController.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GetSize.cs" />
      <Compile Include="Assets\Scripts\Pin.cs" />

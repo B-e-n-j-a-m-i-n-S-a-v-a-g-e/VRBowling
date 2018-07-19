@@ -228,7 +228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Name
-      value: ball_marble (2)
+      value: OrangeBall
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -300,6 +300,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6ea6189b81070499c340382b760b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &405158560
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405158557}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &411449001
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +487,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6ea6189b81070499c340382b760b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &722277244
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722277241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &978883166 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
@@ -494,6 +518,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6ea6189b81070499c340382b760b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &978883169
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 978883166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1074953339
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +636,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Name
-      value: ball_marble (3)
+      value: PurpleBall
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -796,7 +832,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Name
-      value: ball_marble (1)
+      value: StripeBall
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -805,6 +841,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1573610783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1573610784}
+  - component: {fileID: 1573610785}
+  m_Layer: 0
+  m_Name: BallSelectionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1573610784
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573610783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5321596, y: 7.802781, z: -4.07146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1573610785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573610783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7678b06e4154ae4f912414671f04e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1835150985
 Prefab:
   m_ObjectHideFlags: 0
@@ -860,6 +936,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 39a0e27f618c7b24782ebfdabe615930, type: 2}
+    - target: {fileID: 100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
+      propertyPath: m_Name
+      value: FieriBall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
   m_IsPrefabParent: 0
@@ -878,6 +958,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6ea6189b81070499c340382b760b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &2138150877
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2138150875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2138150878 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
