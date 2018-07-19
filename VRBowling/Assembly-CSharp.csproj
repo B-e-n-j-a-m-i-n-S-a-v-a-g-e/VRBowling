@@ -208,6 +208,7 @@
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_ScrollHighlight.shader" />
      <None Include="Assets\ProCore\ProBuilder\readme.txt" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
+     <None Include="Assets\Hdri setup.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_SmoothingPreview.shader" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Ben/Documents/VRBowling/VRBowling/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
