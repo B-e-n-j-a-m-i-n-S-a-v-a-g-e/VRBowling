@@ -1,18 +1,24 @@
 fileFormatVersion: 2
-guid: aba67c668ae8c1d4cbfa94c65e6a282a
-timeCreated: 1531957771
+guid: fc5814a84ce27364189a6d80016f7d0b
+timeCreated: 1532149834
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: Gutterleft
     100002: //RootNode
+    100004: Gutterleft_side
     400000: Gutterleft
     400002: //RootNode
+    400004: Gutterleft_side
     2100000: GutterleftMat
+    2100002: Gutterleft_sideMat
     2300000: Gutterleft
+    2300002: Gutterleft_side
     3300000: Gutterleft
+    3300002: Gutterleft_side
     4300000: Gutterleft
+    4300002: Gutterleft_side
   externalObjects: {}
   materials:
     importMaterials: 1
