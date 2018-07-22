@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BallSelectionScreen.unity
     guid: 252f647f7d333f5458d77c203c4f33f6
   - enabled: 1
