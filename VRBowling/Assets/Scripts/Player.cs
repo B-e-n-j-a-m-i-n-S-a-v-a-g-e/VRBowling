@@ -7,7 +7,6 @@ public class Player : MonoBehaviour {
 	public GameObject BowlingBall;
 	public GameObject Arrow;
 	public float ballDistance = 2.5f;
-	public float arrowDistance = 2.5f;
 
 	public bool holding = true;
 	public float ballThrowingForce = 200.0f;
@@ -28,7 +27,7 @@ public class Player : MonoBehaviour {
 			if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began || Input.GetKeyDown ("space")) {
 				holding = false;
 				BowlingBall.GetComponent<Rigidbody> ().useGravity = true;
-				BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward * ballThrowingForce);
+				BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward); //);
 			}
 		}
 
@@ -36,6 +35,8 @@ public class Player : MonoBehaviour {
 			BowlingBall.transform.position = new Vector3 (0, 2, 5);
 			holding = true;
 		}
+
+		transform.position = new Vector3 (transform.position.x, 0.0f, transform.position.z);
 
 	}
 }
