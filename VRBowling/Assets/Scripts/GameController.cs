@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour {
 	public Player player;
 	public TextMesh infoText;
 	public Pin[] pins;
+	public GameObject BowlingBall;
+	private int numTurns = 0;
 
 	public float evaluationTime = 10.0f;
 
@@ -39,7 +41,16 @@ public class GameController : MonoBehaviour {
 			}
 
 			if (gameTimer <= -3.0f) {
-				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+				BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
+				player.holding = true;
+				evaluating = false;
+
+				if (numTurns < 1) {
+					numTurns++;
+				} else {
+					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+				}
+
 			}
 		}
 	}
