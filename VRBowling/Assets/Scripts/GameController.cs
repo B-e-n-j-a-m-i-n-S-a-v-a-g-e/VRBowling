@@ -14,11 +14,6 @@ public class GameController : MonoBehaviour {
 	private float gameTimer = 0.0f;
 	private bool evaluating = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		infoText.text = "throw the ball.";
@@ -29,6 +24,7 @@ public class GameController : MonoBehaviour {
 				gameTimer = evaluationTime;
 			}
 		} else {
+
 			gameTimer -= Time.deltaTime;
 			if (gameTimer <= 0.0f) {
 				int score = 0;

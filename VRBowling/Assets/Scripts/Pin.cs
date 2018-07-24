@@ -15,6 +15,10 @@ public class Pin : MonoBehaviour {
 	}
 
 	public void OnTouchFloor() {
+
+		if (GetComponent<AudioSource> ()) {
+			GetComponent<AudioSource>().Play ();
+		}
 		Destroy (gameObject);
 	}
 }
