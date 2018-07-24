@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Pin : MonoBehaviour {
 
+
+	public GameObject BowlingBall;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,9 +19,7 @@ public class Pin : MonoBehaviour {
 
 	public void OnTouchFloor() {
 
-		if (GetComponent<AudioSource> ()) {
-			GetComponent<AudioSource>().Play ();
-		}
+		BowlingBall.GetComponent<AudioSource> ().Stop ();
 		Destroy (gameObject);
 	}
 }

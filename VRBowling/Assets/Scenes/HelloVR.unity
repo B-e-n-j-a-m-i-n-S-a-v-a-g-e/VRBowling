@@ -275,6 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddecf1ee28dca44fa55875479c6d83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BowlingBall: {fileID: 343169095}
 --- !u!65 &30559408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -655,7 +656,7 @@ GameObject:
   - component: {fileID: 150552837}
   m_Layer: 0
   m_Name: LeftGutter
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1222,6 +1223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddecf1ee28dca44fa55875479c6d83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BowlingBall: {fileID: 343169095}
 --- !u!65 &418458323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1776,6 +1778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddecf1ee28dca44fa55875479c6d83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BowlingBall: {fileID: 343169095}
 --- !u!65 &871773660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2099,6 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddecf1ee28dca44fa55875479c6d83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BowlingBall: {fileID: 343169095}
 --- !u!65 &980655556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3194,7 +3198,7 @@ GameObject:
   - component: {fileID: 1344804018}
   m_Layer: 0
   m_Name: RightGutter
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3881,7 +3885,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d6013cc024d8ea5459b98e995ee8f1f5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4130,7 +4134,7 @@ MonoBehaviour:
   - {fileID: 418458322}
   - {fileID: 980655555}
   - {fileID: 871773659}
-  BowlingBall: {fileID: 0}
+  BowlingBall: {fileID: 343169095}
   evaluationTime: 10
 --- !u!4 &1836885248
 Transform:
@@ -4250,6 +4254,36 @@ Prefab:
       propertyPath: m_Mass
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114936495826701118, guid: 997c1a4e829996543878ee2f1386bf80,
+        type: 2}
+      propertyPath: BowlingBall
+      value: 
+      objectReference: {fileID: 343169095}
+    - target: {fileID: 114710339610656438, guid: 997c1a4e829996543878ee2f1386bf80,
+        type: 2}
+      propertyPath: BowlingBall
+      value: 
+      objectReference: {fileID: 343169095}
+    - target: {fileID: 114602278888302486, guid: 997c1a4e829996543878ee2f1386bf80,
+        type: 2}
+      propertyPath: BowlingBall
+      value: 
+      objectReference: {fileID: 343169095}
+    - target: {fileID: 114076111860780048, guid: 997c1a4e829996543878ee2f1386bf80,
+        type: 2}
+      propertyPath: BowlingBall
+      value: 
+      objectReference: {fileID: 343169095}
+    - target: {fileID: 114318562502309908, guid: 997c1a4e829996543878ee2f1386bf80,
+        type: 2}
+      propertyPath: BowlingBall
+      value: 
+      objectReference: {fileID: 343169095}
+    - target: {fileID: 114138192656761286, guid: 997c1a4e829996543878ee2f1386bf80,
+        type: 2}
+      propertyPath: BowlingBall
+      value: 
+      objectReference: {fileID: 343169095}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 997c1a4e829996543878ee2f1386bf80, type: 2}
   m_IsPrefabParent: 0

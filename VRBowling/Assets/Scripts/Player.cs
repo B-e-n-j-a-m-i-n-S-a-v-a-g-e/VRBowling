@@ -20,17 +20,20 @@ public class Player : MonoBehaviour {
 
 		if (holding) {
 			BowlingBall.transform.position = transform.position + Camera.main.transform.forward * ballDistance;
-			Arrow.transform.position = transform.position + 
-				new Vector3(0.0f, BowlingBall.transform.position.y - 4.3f, BowlingBall.transform.position.z);
+			Arrow.transform.position = transform.position +
+			new Vector3 (0.0f, BowlingBall.transform.position.y - 4.3f, BowlingBall.transform.position.z);
 
 			Arrow.transform.eulerAngles = new Vector3 (0.0f, transform.eulerAngles.y, 0.0f);
 
 			if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began || Input.GetKeyDown ("space")) {
 				holding = false;
-				BowlingBall.GetComponent<Rigidbody> ().useGravity = true;
-				BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward); //);
-				BowlingBall.GetComponent<AudioSource>().Play();
+				BowlingBall.GetComponent<AudioSource> ().Play ();
 			}
+
+		} else {
+
+			BowlingBall.GetComponent<Rigidbody> ().useGravity = true;
+			BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward * 1000);
 		}
 
 		if (BowlingBall.transform.position.y < -10) {
