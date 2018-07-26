@@ -172,6 +172,7 @@
      <Compile Include="Assets\Scripts\Pin.cs" />
      <Compile Include="Assets\Scripts\PinCollision.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\TriggerCameraChange.cs" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
      <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />

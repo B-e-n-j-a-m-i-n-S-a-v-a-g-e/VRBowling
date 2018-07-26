@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 	public Pin[] pins;
 	public GameObject BowlingBall;
 	private int numTurns = 0;
+	private int score; 
 
 	public float evaluationTime = 10.0f;
 
@@ -18,10 +19,10 @@ public class GameController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		infoText.text = "throw the ball.";
+		infoText.text = "";
 
 		if (!evaluating) {
-			if (player.holding == false) {
+			if (!player.holding) {
 				evaluating = true;
 				gameTimer = evaluationTime;
 			}
@@ -29,7 +30,7 @@ public class GameController : MonoBehaviour {
 
 			gameTimer -= Time.deltaTime;
 			if (gameTimer <= 0.0f) {
-				int score = 0;
+				score = 0;
 
 				for (int i = 0; i < pins.Length; i++) {
 					if (pins [i] == null) {
@@ -45,7 +46,7 @@ public class GameController : MonoBehaviour {
 				player.holding = true;
 				evaluating = false;
 
-				if (numTurns < 1) {
+				if (numTurns < 1 && score != 10) {
 					numTurns++;
 				} else {
 					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
