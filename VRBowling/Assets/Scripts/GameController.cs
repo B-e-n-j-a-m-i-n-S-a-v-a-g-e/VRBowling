@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	public Player player;
+	public GameObject VRPlayer;
 	public TextMesh infoText;
 	public Pin[] pins;
 	public GameObject BowlingBall;
@@ -43,6 +44,7 @@ public class GameController : MonoBehaviour {
 
 			if (gameTimer <= -3.0f) {
 				BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
+				VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
 				player.holding = true;
 				evaluating = false;
 
