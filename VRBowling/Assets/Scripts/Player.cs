@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
 
 		float cameraRotationY = transform.localRotation.eulerAngles.y;
 
+
 		if (cameraRotationY >= rotationLimit && cameraRotationY < (360-rotationLimit)) {
 			blackout.color = Color.clear;
 		} else {
@@ -32,6 +33,8 @@ public class Player : MonoBehaviour {
 		}
 
 		if (holding) {
+
+			BowlingBall.GetComponent<Rigidbody> ().isKinematic = false;
 			BowlingBall.transform.position = transform.position + Camera.main.transform.forward * ballDistance;
 			Arrow.transform.position = transform.position +
 			new Vector3 (0.0f, BowlingBall.transform.position.y - 2.3f, BowlingBall.transform.position.z);
@@ -48,9 +51,8 @@ public class Player : MonoBehaviour {
 			BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward * 1000);
 		}
 
-		if (BowlingBall.transform.position.y < -10) {
-			BowlingBall.transform.position = new Vector3 (0, 2, 5);
-			holding = true;
+		if (BowlingBall.transform.position.y < -1.4) {
+			BowlingBall.GetComponent<Rigidbody> ().isKinematic = true;
 		}
 
 		transform.position = new Vector3 (transform.position.x, 2.0f, transform.position.z);
