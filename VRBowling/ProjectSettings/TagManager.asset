@@ -6,6 +6,7 @@ TagManager:
   tags:
   - floor
   - Ball
+  - Gutter
   layers:
   - Default
   - TransparentFX
