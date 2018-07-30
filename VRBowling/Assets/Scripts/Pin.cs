@@ -6,6 +6,7 @@ public class Pin : MonoBehaviour {
 
 
 	public GameObject BowlingBall;
+	public GameObject explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -21,5 +22,7 @@ public class Pin : MonoBehaviour {
 
 		BowlingBall.GetComponent<AudioSource> ().Stop ();
 		Destroy (gameObject);
+		explosion.transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
+		Instantiate (explosion, new Vector3 (transform.position.x, transform.position.y - 1.0f, transform.position.z), Quaternion.identity);
 	}
 }
