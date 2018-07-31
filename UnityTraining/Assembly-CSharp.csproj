@@ -51,7 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Test.cs" />
+     <Compile Include="Assets\GCD.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Ben/Documents/VRBowling/UnityTraining/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
