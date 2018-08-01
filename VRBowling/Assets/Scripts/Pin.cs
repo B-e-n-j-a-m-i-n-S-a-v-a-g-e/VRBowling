@@ -25,9 +25,11 @@ public class Pin : MonoBehaviour {
 
 		BowlingBall.GetComponent<AudioSource> ().Stop ();
 		GetComponent<AudioSource> ().Play ();
+
+		//GetComponent<MeshExploder> ().Explode ();
 		StartCoroutine ("DestroyPin");
-		explosion.transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
-		Instantiate (explosion, new Vector3 (transform.position.x, transform.position.y - 1.0f, transform.position.z), Quaternion.identity);
+		//explosion.transform.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
+		//Instantiate (explosion, new Vector3 (transform.position.x, transform.position.y - 1.0f, transform.position.z), Quaternion.identity);
 
 	}
 

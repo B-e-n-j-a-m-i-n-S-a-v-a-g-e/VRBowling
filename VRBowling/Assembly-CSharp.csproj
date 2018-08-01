@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Arrow\Demo\Scripts\FollowMouseDemo.cs" />
      <Compile Include="Assets\Arrow\Scripts\ArrowRenderer.cs" />
+     <Compile Include="Assets\AudienceAnimate.cs" />
      <Compile Include="Assets\Fx Explosion Pack\Script\csDemoScenceControl.cs" />
      <Compile Include="Assets\Fx Explosion Pack\Script\csLightControl.cs" />
      <Compile Include="Assets\Fx Explosion Pack\Script\csMouseOrbit.cs" />
@@ -163,6 +164,13 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\Mesh Explosion\Demo\ClickOrTapToExplode.cs" />
+     <Compile Include="Assets\Mesh Explosion\Demo\ReloadScene.cs" />
+     <Compile Include="Assets\Mesh Explosion\Internal\DestroyAfterTime.cs" />
+     <Compile Include="Assets\Mesh Explosion\Internal\DestroyOnFadeCompletion.cs" />
+     <Compile Include="Assets\Mesh Explosion\Internal\Fade.cs" />
+     <Compile Include="Assets\Mesh Explosion\Internal\MeshExplosion.cs" />
+     <Compile Include="Assets\Mesh Explosion\MeshExploder.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
@@ -212,6 +220,7 @@
      <None Include="Assets\GoogleVR\Plugins\Android\proguard-gvr.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_ScrollHighlight.shader" />
      <None Include="Assets\ProCore\ProBuilder\readme.txt" />
+     <None Include="Assets\Mesh Explosion\Read Me.txt" />
      <None Include="Assets\GoogleVR\Plugins\Android\AndroidManifest-Cardboard.xml" />
      <None Include="Assets\Hdri setup.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_SmoothingPreview.shader" />

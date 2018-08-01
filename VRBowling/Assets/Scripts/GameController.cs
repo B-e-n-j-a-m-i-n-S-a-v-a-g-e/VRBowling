@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
 	public TextMesh infoText;
 	public Pin[] pins;
 	public GameObject BowlingBall;
+	public GameObject Audience;
 	private int numTurns = 0;
 	private int score; 
 
@@ -40,6 +41,8 @@ public class GameController : MonoBehaviour {
 				}
 
 				infoText.text = "Your score: " + score;
+				PlayAnimation ();
+
 			}
 
 			if (gameTimer <= -3.0f) {
@@ -56,5 +59,9 @@ public class GameController : MonoBehaviour {
 
 			}
 		}
+	}
+
+	public void PlayAnimation() {
+		Audience.GetComponent<Animation> ().Play ();	
 	}
 }
