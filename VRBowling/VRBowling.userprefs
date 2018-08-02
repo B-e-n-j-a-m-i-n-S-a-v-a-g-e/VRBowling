@@ -1,14 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Pin.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player.cs">
     <Files>
       <File FileName="Assets\Scripts\BallRotation.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BallSelectionController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="44" Column="22" />
       <File FileName="Assets\Scripts\Player.cs" Line="16" Column="32" />
       <File FileName="Assets\Scripts\GetSize.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pin.cs" Line="26" Column="86" />
+      <File FileName="Assets\Scripts\Pin.cs" Line="29" Column="5" />
       <File FileName="Assets\Scripts\PinCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mesh Explosion\Read Me.txt" Line="78" Column="1" />
+      <File FileName="Assets\Mesh Explosion\MeshExploder.cs" Line="52" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

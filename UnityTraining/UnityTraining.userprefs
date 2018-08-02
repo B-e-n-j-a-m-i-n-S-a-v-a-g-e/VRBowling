@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GCD.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Primes.cs">
     <Files>
-      <File FileName="Assets\GCD.cs" Line="12" Column="30" />
+      <File FileName="Assets\Primes.cs" Line="9" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -40,6 +40,14 @@ public class GameController : MonoBehaviour {
 					}
 				}
 
+				Camera.main.gameObject.SetActive (false);
+				Audience.SetActive (true);
+				Audience.transform.GetChild(0).GetComponent<Animation>().Play("applause");
+				Audience.transform.GetChild(1).GetComponent<Animation>().Play("applause");
+				Audience.transform.GetChild(2).GetComponent<Animation>().Play("applause");
+				Audience.transform.GetChild(3).GetComponent<Animation>().Play("applause");
+				Audience.transform.GetChild(4).GetComponent<Animation>().Play("applause");
+
 				infoText.text = "Your score: " + score;
 				PlayAnimation ();
 
