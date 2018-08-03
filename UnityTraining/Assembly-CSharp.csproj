@@ -51,7 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Primes.cs" />
+     <Compile Include="Assets\LinkedList.cs" />
+     <Compile Include="Assets\TestLL.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Ben/Documents/VRBowling/UnityTraining/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

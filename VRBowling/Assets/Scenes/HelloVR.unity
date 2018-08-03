@@ -4782,7 +4782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 457270, guid: eb46849557b7317479b1c5c02c5b36ca, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 457270, guid: eb46849557b7317479b1c5c02c5b36ca, type: 2}
       propertyPath: m_LocalScale.x
@@ -6593,6 +6593,7 @@ MonoBehaviour:
   - {fileID: 871773659}
   BowlingBall: {fileID: 343169095}
   Audience: {fileID: 533599921}
+  camera: {fileID: 959308587}
   evaluationTime: 10
 --- !u!4 &1836885248
 Transform:
@@ -6605,7 +6606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1836885249
 AudioSource:
@@ -7562,7 +7563,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c6ac651f2d8353542ab1014e0144fbbb, type: 3}
       propertyPath: m_LocalScale.x

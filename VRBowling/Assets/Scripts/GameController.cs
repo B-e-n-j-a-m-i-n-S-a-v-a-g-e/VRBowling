@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
 	public Pin[] pins;
 	public GameObject BowlingBall;
 	public GameObject Audience;
+	public GameObject camera;
 	private int numTurns = 0;
 	private int score; 
 
@@ -19,7 +20,6 @@ public class GameController : MonoBehaviour {
 	private float gameTimer = 0.0f;
 	private bool evaluating = false;
 
-	// Update is called once per frame
 	void Update () {
 		infoText.text = "";
 
@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 					}
 				}
 
-				Camera.main.gameObject.SetActive (false);
+				camera.gameObject.SetActive (false);
 				Audience.SetActive (true);
 				Audience.transform.GetChild(0).GetComponent<Animation>().Play("applause");
 				Audience.transform.GetChild(1).GetComponent<Animation>().Play("applause");
@@ -51,25 +51,35 @@ public class GameController : MonoBehaviour {
 				infoText.text = "Your score: " + score;
 				PlayAnimation ();
 
-			}
-
-			if (gameTimer <= -3.0f) {
-				BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
-				VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
-				player.holding = true;
-				evaluating = false;
-
-				if (numTurns < 1 && score != 10) {
-					numTurns++;
-				} else {
-					SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
-				}
+				StartCoroutine ("ResetBall");
 
 			}
 		}
 	}
 
 	public void PlayAnimation() {
-		Audience.GetComponent<Animation> ().Play ();	
+		//Audience.GetComponent<Animation> ().Play ();	
+	}
+
+	public IEnumerator ResetBall() {
+
+		yield return new WaitForSeconds (2.5f);
+
+		camera.gameObject.SetActive (true);
+		Audience.SetActive (false);
+
+		//if (gameTimer <= -3.0f) {
+			BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
+			VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
+			player.holding = true;
+			evaluating = false;
+
+			if (numTurns < 1 && score != 10) {
+				numTurns++;
+			} else {
+				//SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+			}
+
+		//}
 	}
 }
