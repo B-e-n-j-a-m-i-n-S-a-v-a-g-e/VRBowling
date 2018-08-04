@@ -12,6 +12,9 @@ public class TestLL : MonoBehaviour {
 		ll.AddElementAtBeginning ("dog");
 		ll.AddElementAtBeginning ("bird");
 		ll.AddElementAtBeginning ("giraffe");
+		ll.AddElementAtEnd ("dolphin");
+		ll.AddElementAtEnd ("sea urchin");
+		ll.AddElementAfterValue ("dolphin", "octopus");
 		ll.PrintOutElements ();
 	}
 
