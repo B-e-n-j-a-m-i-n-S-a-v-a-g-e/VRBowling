@@ -11,6 +11,6 @@ public class BallRotation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		transform.Rotate(Vector3.up * Time.deltaTime * -22.00f, Space.World);
 	}
 }

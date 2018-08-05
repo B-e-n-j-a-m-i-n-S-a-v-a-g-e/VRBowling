@@ -22,7 +22,7 @@ public class BallSelectionController : MonoBehaviour {
 				if (hit.transform.name == "FieriBall") {
 					Debug.Log ("ok.");
 					currentBall = "FieriBall";
-					SceneManager.LoadScene ("HelloVR");
+					SceneManager.LoadScene ("Gameplay");
 				}
 			}
 		}
