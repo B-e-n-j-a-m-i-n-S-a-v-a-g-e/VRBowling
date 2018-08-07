@@ -15,7 +15,13 @@ public class TestLL : MonoBehaviour {
 		ll.AddElementAtEnd ("dolphin");
 		ll.AddElementAtEnd ("sea urchin");
 		ll.AddElementAfterValue ("dolphin", "octopus");
+
 		ll.PrintOutElements ();
+
+		ll.RemoveElementAfterValue ("dog");
+
+		ll.PrintOutElements ();
+
 	}
 
 }

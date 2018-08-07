@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Arrays.cs" />
      <Compile Include="Assets\LinkedList.cs" />
      <Compile Include="Assets\TestLL.cs" />
  <Reference Include="Facebook.Unity.Settings">

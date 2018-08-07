@@ -53,6 +53,35 @@ public class LinkedList {
 		newCell.Next = null;
 	}
 
+	public Cell FindCell(string value) {
+
+		Cell current = head;
+
+		while (current.Next != null) {
+
+			if (current.Value == value) {
+				return current;
+			}
+
+			current = current.Next;
+		}
+
+		return null;
+	}
+		
+	public void RemoveElementAfterValue(string value) { //(a)->(b)->(c)
+
+		Cell current = head;
+
+		while (current.Next.Next != null) {
+
+			if (current.Value == value) {
+
+				current.Next = current.Next.Next;
+			}
+			current = current.Next;
+		}
+	}
 
 	public void PrintOutElements() {
 
@@ -64,19 +93,21 @@ public class LinkedList {
 			current = current.Next;
 		}
 	}
+
+
 	/*
-	public void AddElementAfterValue(string searchValue, string value) {
+	public void RemoveElementAfterValue(string value) {
 
 		Cell current = head;
-		Cell newCell = new Cell ();
-		newCell.Value = value;
 
-		while (current != null) {
-			if (current.Value == searchValue) {
-				newCell.Next = current.Next;
-				current.Next = newCell;
+		while (current.Next.Next != null) {
+
+			if (current.Value == value) {
+				current.Next = current.Next.Next;
 			}
+
 			current = current.Next;
 		}
-	} */
+	}
+	*/
 }
