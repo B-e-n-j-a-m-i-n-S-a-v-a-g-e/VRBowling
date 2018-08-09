@@ -181,6 +181,7 @@
      <Compile Include="Assets\Recenter.cs" />
      <Compile Include="Assets\Scripts\BallRotation.cs" />
      <Compile Include="Assets\Scripts\BallSelectionController.cs" />
+     <Compile Include="Assets\Scripts\FixRotation.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\GetSize.cs" />
      <Compile Include="Assets\Scripts\Pin.cs" />

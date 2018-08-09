@@ -19,6 +19,7 @@ public class Player : MonoBehaviour {
 
 	void Start () {
 		blackout = GetComponentInChildren<Image>();
+		BowlingBall.GetComponent<ParticleSystem>().enableEmission = false;
 	}
 
 	void Update () {
@@ -49,7 +50,11 @@ public class Player : MonoBehaviour {
 		} else {
 			BowlingBall.GetComponent<Rigidbody> ().useGravity = true;
 			BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward * 1000);
-			BowlingBall.GetComponent<TrailRenderer> ().enabled = true;
+
+			if (BowlingBall.transform.position.y < 0.95f) {
+				BowlingBall.GetComponent<TrailRenderer> ().enabled = true;
+				//BowlingBall.GetComponent<ParticleSystem>().enableEmission = true;
+			}
 		}
 
 		if (BowlingBall.transform.position.y < -1.4) {
