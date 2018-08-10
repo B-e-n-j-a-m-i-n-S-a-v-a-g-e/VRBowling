@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
 
 	public GameObject BowlingBall;
 	public GameObject Arrow;
+	public ParticleSystem ps;
 	public float ballDistance = 2.5f;
 	public float arrowDistance = 2.5f;
 
@@ -51,9 +52,13 @@ public class Player : MonoBehaviour {
 			BowlingBall.GetComponent<Rigidbody> ().useGravity = true;
 			BowlingBall.GetComponent<Rigidbody> ().AddForce (transform.forward * 1000);
 
-			if (BowlingBall.transform.position.y < 0.95f) {
-				BowlingBall.GetComponent<TrailRenderer> ().enabled = true;
-				//BowlingBall.GetComponent<ParticleSystem>().enableEmission = true;
+			if (BowlingBall.transform.position.y < 0.95f && BowlingBall.transform.position.x <= 180.0f ) {
+				ps.Play ();
+			}
+
+			if (BowlingBall.transform.position.x > 180.0f) {
+				Debug.Log ("Hmmmm");
+				ps.Stop ();
 			}
 		}
 
