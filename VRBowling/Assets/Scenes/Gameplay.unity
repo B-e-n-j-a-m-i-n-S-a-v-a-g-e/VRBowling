@@ -423,8 +423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!65 &30559408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1478,8 +1478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!1001 &371812367
 Prefab:
   m_ObjectHideFlags: 0
@@ -1670,8 +1670,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!65 &418458323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1968,8 +1968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!1 &533599921 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1392535416576614, guid: fa77fc1065c315941b14223ddfb7d970,
@@ -2763,8 +2763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!1 &826928259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,8 +2987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!65 &871773660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3531,8 +3531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!65 &980655556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4418,8 +4418,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!1001 &1284335123
 Prefab:
   m_ObjectHideFlags: 0
@@ -4726,7 +4726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1350420568
 Transform:
   m_ObjectHideFlags: 0
@@ -9013,8 +9013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
 --- !u!1 &1686411688
 GameObject:
   m_ObjectHideFlags: 0
@@ -11166,5 +11166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BowlingBall: {fileID: 343169095}
-  ps: {fileID: 1350420570}
   pinsDown: {fileID: 8300000, guid: b5da00b3daf72af49bbb8c6f1aa8a51a, type: 3}
+  explosion: {fileID: 1234009316784782, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
