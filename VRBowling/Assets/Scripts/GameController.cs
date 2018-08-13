@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
 		infoText.text = "";
 
 		if (!evaluating) {
-			if (!player.holding) {
+			if (!player.holdingBall) {
 				evaluating = true;
 				gameTimer = evaluationTime;
 			}
@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour {
 				Audience.transform.GetChild(4).GetComponent<Animation>().Play("applause");
 
 				infoText.text = "Your score: " + score;
-				PlayAnimation ();
+				//PlayAnimation ();
 
 				StartCoroutine ("ResetBall");
 
@@ -62,8 +62,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	public IEnumerator ResetBall() {
-
-		yield return new WaitForSeconds (2.5f);
+		yield return new WaitForSeconds (3.0f);
 
 		camera.gameObject.SetActive (true);
 		Audience.SetActive (false);
@@ -71,13 +70,13 @@ public class GameController : MonoBehaviour {
 		//if (gameTimer <= -3.0f) {
 			BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
 			VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
-			player.holding = true;
+			player.holdingBall = true;
 			evaluating = false;
 
 			if (numTurns < 1 && score != 10) {
 				numTurns++;
 			} else {
-				//SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			}
 
 		//}
