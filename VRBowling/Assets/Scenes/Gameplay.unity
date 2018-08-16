@@ -9900,48 +9900,73 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.enabled
-      value: 0
+      propertyPath: ShapeModule.radiusThickness
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
       propertyPath: randomSeed
-      value: -43417352
+      value: 1791429503
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.key0.r
-      value: 0.15456393
+      propertyPath: ShapeModule.radius.value
+      value: 6.81
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.key0.g
-      value: 0.01838234
+      propertyPath: ShapeModule.m_Scale.x
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.key0.b
-      value: 0.5
+      propertyPath: ShapeModule.m_Scale.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.key2.a
+      propertyPath: ShapeModule.m_Scale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
+        type: 2}
+      propertyPath: TrailModule.colorOverLifetime.maxColor.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.atime1
-      value: 21588
+      propertyPath: TrailModule.colorOverLifetime.maxColor.g
+      value: 0.051470578
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.atime2
-      value: 65535
+      propertyPath: TrailModule.colorOverLifetime.maxColor.b
+      value: 0.051470578
       objectReference: {fileID: 0}
     - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
         type: 2}
-      propertyPath: ColorBySpeedModule.gradient.maxGradient.m_NumAlphaKeys
-      value: 3
+      propertyPath: TrailModule.colorOverTrail.maxColor.r
+      value: 0.22667357
+      objectReference: {fileID: 0}
+    - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
+        type: 2}
+      propertyPath: TrailModule.colorOverTrail.maxColor.g
+      value: 0.08088237
+      objectReference: {fileID: 0}
+    - target: {fileID: 198202951529679270, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
+        type: 2}
+      propertyPath: TrailModule.colorOverTrail.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199978027588644302, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
+        type: 2}
+      propertyPath: m_SortingFudge
+      value: 10.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 199978027588644302, guid: 3774a3d2006d89c4ebc3164cedfb39a6,
+        type: 2}
+      propertyPath: m_MaxParticleSize
+      value: 4.84
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3774a3d2006d89c4ebc3164cedfb39a6, type: 2}
