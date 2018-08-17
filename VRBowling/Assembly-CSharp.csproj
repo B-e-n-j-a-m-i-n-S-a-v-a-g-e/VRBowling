@@ -183,7 +183,6 @@
      <Compile Include="Assets\Scripts\BallSelectionController.cs" />
      <Compile Include="Assets\Scripts\FixRotation.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
-     <Compile Include="Assets\Scripts\GetSize.cs" />
      <Compile Include="Assets\Scripts\Pin.cs" />
      <Compile Include="Assets\Scripts\PinCollision.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

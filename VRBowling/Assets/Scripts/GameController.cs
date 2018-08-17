@@ -29,8 +29,8 @@ public class GameController : MonoBehaviour {
 				gameTimer = evaluationTime;
 			}
 		} else {
-
 			gameTimer -= Time.deltaTime;
+			Debug.Log (gameTimer);
 			if (gameTimer <= 0.0f) {
 				score = 0;
 
@@ -47,20 +47,16 @@ public class GameController : MonoBehaviour {
 				Audience.transform.GetChild(2).GetComponent<Animation>().Play("applause");
 				Audience.transform.GetChild(3).GetComponent<Animation>().Play("applause");
 				Audience.transform.GetChild(4).GetComponent<Animation>().Play("applause");
+				Audience.GetComponent<AudioSource> ().Play ();
 
-				infoText.text = "Your score: " + score;
-				//PlayAnimation ();
+				//infoText.text = "Your score: " + score;
 
 				StartCoroutine ("ResetBall");
 
 			}
 		}
 	}
-
-	public void PlayAnimation() {
-		//Audience.GetComponent<Animation> ().Play ();	
-	}
-
+		
 	public IEnumerator ResetBall() {
 		yield return new WaitForSeconds (3.0f);
 
@@ -70,6 +66,7 @@ public class GameController : MonoBehaviour {
 		//if (gameTimer <= -3.0f) {
 			BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
 			VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
+			gameTimer = 10.0f;
 			player.holdingBall = true;
 			evaluating = false;
 
