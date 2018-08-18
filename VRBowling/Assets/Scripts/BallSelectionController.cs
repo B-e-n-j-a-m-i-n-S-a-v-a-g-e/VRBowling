@@ -33,7 +33,6 @@ public class BallSelectionController : MonoBehaviour {
 
 				if (Physics.Raycast (ray, out hit)) {
 					if (hit.transform.name == "FieriBall") {
-						Debug.Log ("ok.");
 						currentBall = "FieriBall";
 						SceneManager.LoadScene ("Gameplay");
 					}

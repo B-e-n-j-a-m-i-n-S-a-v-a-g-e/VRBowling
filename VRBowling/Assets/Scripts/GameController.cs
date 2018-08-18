@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour {
 			}
 		} else {
 			gameTimer -= Time.deltaTime;
-			Debug.Log (gameTimer);
 			if (gameTimer <= 0.0f) {
 				score = 0;
 
@@ -47,7 +46,7 @@ public class GameController : MonoBehaviour {
 				Audience.transform.GetChild(2).GetComponent<Animation>().Play("applause");
 				Audience.transform.GetChild(3).GetComponent<Animation>().Play("applause");
 				Audience.transform.GetChild(4).GetComponent<Animation>().Play("applause");
-				Audience.GetComponent<AudioSource> ().Play ();
+		
 
 				//infoText.text = "Your score: " + score;
 
@@ -69,7 +68,6 @@ public class GameController : MonoBehaviour {
 			gameTimer = 10.0f;
 			player.holdingBall = true;
 			evaluating = false;
-
 
 			if (numTurns < 1 && score != 10) {
 				numTurns++;
