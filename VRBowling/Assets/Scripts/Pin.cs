@@ -24,8 +24,8 @@ public class Pin : MonoBehaviour {
 
 	IEnumerator DestroyPin() {
 		yield return new WaitForSeconds (0.5f);
-		Instantiate (explosion, new Vector3(transform.position.x - 1.0f, transform.position.y, transform.position.z), Quaternion.identity);
-		Instantiate (innerExplosion, new Vector3(transform.position.x - 1.0f, transform.position.y, transform.position.z), Quaternion.identity);
+		Instantiate (explosion, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+		Instantiate (innerExplosion, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
 		Destroy (gameObject);
 
 	}

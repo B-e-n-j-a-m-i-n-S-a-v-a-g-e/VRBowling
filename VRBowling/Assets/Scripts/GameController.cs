@@ -70,6 +70,7 @@ public class GameController : MonoBehaviour {
 			player.holdingBall = true;
 			evaluating = false;
 
+
 			if (numTurns < 1 && score != 10) {
 				numTurns++;
 			} else {
