@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour {
 		camera.gameObject.SetActive (true);
 		Audience.SetActive (false);
 
-		//if (gameTimer <= -3.0f) {
+		if (gameTimer <= -3.0f) {
 			BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
 			VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
 			gameTimer = 10.0f;
@@ -75,6 +75,6 @@ public class GameController : MonoBehaviour {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			}
 
-		//}
+		}
 	}
 }
