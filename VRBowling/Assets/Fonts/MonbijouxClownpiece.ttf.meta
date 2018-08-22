@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: be5d2a958f17f6547934da72cbe8b671
+timeCreated: 1534912614
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Monbijoux Clownpiece
+  fontNames:
+  - Monbijoux Clownpiece
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
