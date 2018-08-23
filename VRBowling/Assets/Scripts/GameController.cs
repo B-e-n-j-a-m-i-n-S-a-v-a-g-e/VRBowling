@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 	public Player player;
 	public GameObject VRPlayer;
 	public TextMesh infoText;
+	public GameObject strikeText;
 	public Pin[] pins;
 	public GameObject BowlingBall;
 	public GameObject Audience;
@@ -38,7 +39,7 @@ public class GameController : MonoBehaviour {
 						score++;
 					}
 				}
-
+				strikeText.gameObject.SetActive (true);
 				camera.gameObject.SetActive (false);
 				Audience.SetActive (true);
 				Audience.transform.GetChild(0).GetComponent<Animation>().Play("applause");
@@ -59,6 +60,7 @@ public class GameController : MonoBehaviour {
 	public IEnumerator ResetBall() {
 		yield return new WaitForSeconds (3.0f);
 
+		strikeText.gameObject.SetActive (false);
 		camera.gameObject.SetActive (true);
 		Audience.SetActive (false);
 
