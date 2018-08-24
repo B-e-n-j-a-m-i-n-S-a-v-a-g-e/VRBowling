@@ -1446,7 +1446,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -110203410
+  randomSeed: -2120155933
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5614,7 +5614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &676293215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6117,7 +6117,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1866570961
+  randomSeed: 1044562173
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9883,7 +9883,7 @@ Prefab:
       objectReference: {fileID: 7400002, guid: 204794585e8683340a2b6df73e9ac9f0, type: 3}
     - target: {fileID: 1392535416576614, guid: fa77fc1065c315941b14223ddfb7d970, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4470998188041494, guid: fa77fc1065c315941b14223ddfb7d970, type: 2}
       propertyPath: m_LocalRotation.x
