@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BallSelectionController : MonoBehaviour {
 
 	private string currentBall;
 	private bool isShowingTitle = false;
+	public GameObject text;
+	public GameObject pointer;
 
 	void Start () {
 
 		StartCoroutine ("MoveCamera");
+		pointer.gameObject.SetActive (false);
 	}
 
 	void Update () {
@@ -19,12 +23,12 @@ public class BallSelectionController : MonoBehaviour {
 
 			if (Camera.main.gameObject.transform.rotation.y <= 0.0f) {
 				
-				Debug.Log (Camera.main.gameObject.transform.rotation.y);
-				Camera.main.gameObject.transform.Rotate (0, 0.2f, 0);
-			} else if (Camera.main.gameObject.transform.rotation.y <= 0.0f) {  
-				
-				GameObject.Find ("IntroScreenText").SetActive (true);
-				GameObject.Find ("TitleText").SetActive (false);
+				Camera.main.gameObject.transform.Rotate (0, 0.3f, 0);
+			} else if (Camera.main.gameObject.transform.rotation.y > 0.0f) {  
+
+				StartCoroutine(FadeTextToZeroAlpha(1f, text.GetComponent<Text>()));
+				//GameObject.Find ("IntroScreenText").SetActive (true);
+				//GameObject.Find ("TitleText").SetActive (false);
 			}
 				
 			if (Input.GetMouseButtonDown (0)) {
@@ -39,8 +43,9 @@ public class BallSelectionController : MonoBehaviour {
 				}
 			}
 		} else {
-			GameObject.Find ("IntroScreenText").SetActive (false);
-			GameObject.Find ("TitleText").SetActive (true);
+			//GameObject.Find ("IntroScreenText").SetActive (false);
+			//GameObject.Find ("TitleText").SetActive (true);
+			pointer.gameObject.SetActive (true);
 		}
 	}
 
@@ -48,5 +53,17 @@ public class BallSelectionController : MonoBehaviour {
 
 		yield return new WaitForSeconds (3.0f);
 		isShowingTitle = true;
+	}
+
+	IEnumerator FadeTextToZeroAlpha(float t, Text i)
+	{
+		i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+		while (i.color.a > 0.0f)
+		{
+			i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
+			yield return null;
+		}
+		isShowingTitle = false;
+		yield return null;
 	}
 }

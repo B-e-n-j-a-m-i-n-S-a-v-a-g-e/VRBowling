@@ -9,7 +9,6 @@ public class Player : MonoBehaviour {
 	public ParticleSystem ps;
 
 	public float ballDistance = 2.5f;
-	public float ballThrowingForce = 200.0f;
 
 	public bool holdingBall = true;
 
