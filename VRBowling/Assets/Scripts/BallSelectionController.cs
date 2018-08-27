@@ -9,12 +9,12 @@ public class BallSelectionController : MonoBehaviour {
 	private string currentBall;
 	private bool isShowingTitle = false;
 	public GameObject text;
+	public GameObject selectBallText;
 	public GameObject pointer;
 
 	void Start () {
 
 		StartCoroutine ("MoveCamera");
-		pointer.gameObject.SetActive (false);
 	}
 
 	void Update () {
@@ -26,12 +26,16 @@ public class BallSelectionController : MonoBehaviour {
 				Camera.main.gameObject.transform.Rotate (0, 0.3f, 0);
 			} else if (Camera.main.gameObject.transform.rotation.y > 0.0f) {  
 
+				selectBallText.SetActive (true);
+				pointer.gameObject.SetActive (true);
 				StartCoroutine(FadeTextToZeroAlpha(1f, text.GetComponent<Text>()));
-				//GameObject.Find ("IntroScreenText").SetActive (true);
+
 				//GameObject.Find ("TitleText").SetActive (false);
 			}
 				
 			if (Input.GetMouseButtonDown (0)) {
+
+				Debug.Log (pointer.transform.position.x);
 				RaycastHit hit;
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
@@ -45,7 +49,21 @@ public class BallSelectionController : MonoBehaviour {
 		} else {
 			//GameObject.Find ("IntroScreenText").SetActive (false);
 			//GameObject.Find ("TitleText").SetActive (true);
-			pointer.gameObject.SetActive (true);
+	
+
+
+			if (Input.GetMouseButtonDown (0)) {
+
+
+				RaycastHit hit;
+				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+				if (Physics.Raycast (ray, out hit)) {
+					if (hit.transform.name == "FieriBall") {
+						currentBall = "FieriBall";
+						SceneManager.LoadScene ("Gameplay");
+					}
+				}
+			}
 		}
 	}
 
@@ -66,4 +84,6 @@ public class BallSelectionController : MonoBehaviour {
 		isShowingTitle = false;
 		yield return null;
 	}
+
+
 }
