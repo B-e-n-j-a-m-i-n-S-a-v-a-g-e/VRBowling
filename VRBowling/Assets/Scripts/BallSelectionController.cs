@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class BallSelectionController : MonoBehaviour {
 
 	private string currentBall;
+	private BallType bt;
 	private bool isShowingTitle = false;
 	public GameObject text;
 	public GameObject selectBallText;
@@ -41,7 +42,19 @@ public class BallSelectionController : MonoBehaviour {
 
 				if (Physics.Raycast (ray, out hit)) {
 					if (hit.transform.name == "FieriBall") {
-						currentBall = "FieriBall";
+						bt.ballType = "FieriBall";
+						SceneManager.LoadScene ("Gameplay");
+					}
+					else if (hit.transform.name == "StripeBall") {
+						bt.ballType= "StripeBall";
+						SceneManager.LoadScene ("Gameplay");
+					}
+					else if (hit.transform.name == "OrangeBall") {
+						bt.ballType = "OrangeBall";
+						SceneManager.LoadScene ("Gameplay");
+					}
+					else if (hit.transform.name == "PurpleBall") {
+						bt.ballType = "PurpleBall";
 						SceneManager.LoadScene ("Gameplay");
 					}
 				}

@@ -23,6 +23,15 @@ public class PointerScript : MonoBehaviour {
 		case "FieriBall":
 			Debug.Log ("Fieri collision");
 			break;
+		case "StripeBall":
+			Debug.Log ("Stripe collision");
+			break;
+		case "OrangeBall":
+			Debug.Log ("Orange collision");
+			break;
+		case "PurpleBall":
+			Debug.Log ("Purple collision");
+			break;
 		}
 	}
 }
