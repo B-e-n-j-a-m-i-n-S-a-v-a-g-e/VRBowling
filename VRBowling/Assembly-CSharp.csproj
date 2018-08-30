@@ -180,6 +180,7 @@
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
      <Compile Include="Assets\Recenter.cs" />
+     <Compile Include="Assets\Scripts\AssignBall.cs" />
      <Compile Include="Assets\Scripts\AudienceAudio.cs" />
      <Compile Include="Assets\Scripts\BallRotation.cs" />
      <Compile Include="Assets\Scripts\BallSelectionController.cs" />

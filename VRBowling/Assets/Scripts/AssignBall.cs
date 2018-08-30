@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallType : MonoBehaviour {
+public class AssignBall : MonoBehaviour {
 
-	public string ballType = "FieriBall";
+	private BallType bt;
+	private Material ballMaterial;
 
 	// Use this for initialization
 	void Start () {
-		DontDestroyOnLoad (this.gameObject);
+		ballMaterial = GetComponent<MeshRenderer> ().material;
+		Debug.Log (ballMaterial);
 	}
 	
 	// Update is called once per frame

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BallSelectionController : MonoBehaviour {
 
 	private string currentBall;
-	private BallType bt;
+	public BallType bt;
 	private bool isShowingTitle = false;
 	public GameObject text;
 	public GameObject selectBallText;
@@ -46,7 +46,7 @@ public class BallSelectionController : MonoBehaviour {
 						SceneManager.LoadScene ("Gameplay");
 					}
 					else if (hit.transform.name == "StripeBall") {
-						bt.ballType= "StripeBall";
+						bt.ballType = "StripeBall";
 						SceneManager.LoadScene ("Gameplay");
 					}
 					else if (hit.transform.name == "OrangeBall") {

@@ -15,7 +15,7 @@ public class PointerScript : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 
-
+		/*
 		Debug.Log (col.gameObject.name);
 
 		switch(col.gameObject.name)
@@ -33,5 +33,6 @@ public class PointerScript : MonoBehaviour {
 			Debug.Log ("Purple collision");
 			break;
 		}
+		*/
 	}
 }
