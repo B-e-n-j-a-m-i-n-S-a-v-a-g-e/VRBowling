@@ -17,6 +17,7 @@ public class Pin : MonoBehaviour {
 
 	public void OnTouchFloor() {
 
+		Debug.Log ("getting here?");
 		BowlingBall.GetComponent<AudioSource> ().Stop ();
 		GetComponent<AudioSource> ().Play ();
 		DestroyPin ();

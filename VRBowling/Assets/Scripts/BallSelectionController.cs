@@ -28,15 +28,12 @@ public class BallSelectionController : MonoBehaviour {
 			} else if (Camera.main.gameObject.transform.rotation.y > 0.0f) {  
 
 				selectBallText.SetActive (true);
-				pointer.gameObject.SetActive (true);
+				//pointer.gameObject.SetActive (true);
 				StartCoroutine(FadeTextToZeroAlpha(1f, text.GetComponent<Text>()));
-
-				//GameObject.Find ("TitleText").SetActive (false);
 			}
 				
 			if (Input.GetMouseButtonDown (0)) {
 
-				Debug.Log (pointer.transform.position.x);
 				RaycastHit hit;
 				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
@@ -60,11 +57,9 @@ public class BallSelectionController : MonoBehaviour {
 				}
 			}
 		} else {
-			//GameObject.Find ("IntroScreenText").SetActive (false);
-			//GameObject.Find ("TitleText").SetActive (true);
 	
-
-
+			//pointer.gameObject.SetActive (true);
+			Debug.Log ("am I here?");
 			if (Input.GetMouseButtonDown (0)) {
 
 
@@ -73,6 +68,18 @@ public class BallSelectionController : MonoBehaviour {
 				if (Physics.Raycast (ray, out hit)) {
 					if (hit.transform.name == "FieriBall") {
 						currentBall = "FieriBall";
+						SceneManager.LoadScene ("Gameplay");
+					}	
+					else if (hit.transform.name == "StripeBall") {
+						bt.ballType = "StripeBall";
+						SceneManager.LoadScene ("Gameplay");
+					}
+					else if (hit.transform.name == "OrangeBall") {
+						bt.ballType = "OrangeBall";
+						SceneManager.LoadScene ("Gameplay");
+					}
+					else if (hit.transform.name == "PurpleBall") {
+						bt.ballType = "PurpleBall";
 						SceneManager.LoadScene ("Gameplay");
 					}
 				}
