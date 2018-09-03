@@ -10,7 +10,7 @@ public class AssignBall : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		Debug.Log ("BALL TYPE " + bt.ballType);
+		//Debug.Log ("BALL TYPE " + bt.ballType);
 		ballMaterial = GetComponent<MeshRenderer> ().material;
 		Debug.Log (ballMaterial);
 	}

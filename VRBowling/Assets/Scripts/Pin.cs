@@ -19,12 +19,13 @@ public class Pin : MonoBehaviour {
 
 		Debug.Log ("getting here?");
 		BowlingBall.GetComponent<AudioSource> ().Stop ();
-		GetComponent<AudioSource> ().Play ();
-		DestroyPin ();
+		this.GetComponent<AudioSource> ().Play ();
+		StartCoroutine ("DestroyPin");
+		//DestroyPin ();
 	}
 
-	void DestroyPin() {
-		//yield return new WaitForSeconds (0.5f);
+	IEnumerator DestroyPin() {
+		yield return new WaitForSeconds (0.3f);
 		Instantiate (explosion, new Vector3(transform.position.x - 0.8f, transform.position.y, transform.position.z), Quaternion.identity);
 		Instantiate (innerExplosion, new Vector3(transform.position.x - 0.8f, transform.position.y, transform.position.z), Quaternion.identity);
 		Destroy (gameObject);
