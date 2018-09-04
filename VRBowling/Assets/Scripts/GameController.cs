@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour {
 
 	void Update () {
 		infoText.text = "";
-
+		Debug.Log ("game timer " + gameTimer);
 		if (!evaluating) {
 			if (!player.holdingBall) {
 				evaluating = true;
@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour {
 			}
 		} else {
 			gameTimer -= Time.deltaTime;
-			if (gameTimer <= 0.0f) {
+			if (gameTimer <= 3.0f) {
 				score = 0;
 
 				for (int i = 0; i < pins.Length; i++) {
@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour {
 		camera.gameObject.SetActive (true);
 		Audience.SetActive (false);
 
-		if (gameTimer <= -3.0f) {
+		if (gameTimer <= 0.0f) {
 			BowlingBall.transform.position = new Vector3 (-1.25f, 2.16f, 3.34f);
 			VRPlayer.transform.position = new Vector3 (0, 2.97f, 7.92f);
 			gameTimer = 10.0f;
