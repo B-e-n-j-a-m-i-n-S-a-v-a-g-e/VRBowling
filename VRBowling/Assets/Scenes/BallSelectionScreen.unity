@@ -1682,7 +1682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bt: {fileID: 1305472287}
   text: {fileID: 474154535}
-  selectBallText: {fileID: 46244739}
+  selectBallText: {fileID: 507008671}
   pointer: {fileID: 322674406}
 --- !u!1001 &1835150985
 Prefab:

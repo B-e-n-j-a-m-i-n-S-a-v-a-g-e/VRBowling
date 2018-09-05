@@ -27,7 +27,7 @@ public class BallSelectionController : MonoBehaviour {
 				Camera.main.gameObject.transform.Rotate (0, 0.3f, 0);
 			} else if (Camera.main.gameObject.transform.rotation.y > 0.0f) {  
 
-				selectBallText.SetActive (true);
+
 				//pointer.gameObject.SetActive (true);
 				StartCoroutine(FadeTextToZeroAlpha(1f, text.GetComponent<Text>()));
 			}
@@ -60,6 +60,7 @@ public class BallSelectionController : MonoBehaviour {
 	
 			//pointer.gameObject.SetActive (true);
 			Debug.Log ("am I here?");
+	
 			if (Input.GetMouseButtonDown (0)) {
 
 
@@ -95,6 +96,8 @@ public class BallSelectionController : MonoBehaviour {
 
 	IEnumerator FadeTextToZeroAlpha(float t, Text i)
 	{
+
+		selectBallText.SetActive (true);
 		i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
 		while (i.color.a > 0.0f)
 		{
